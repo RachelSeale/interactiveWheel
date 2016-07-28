@@ -1260,8 +1260,8 @@ wheelnavItem.prototype.setWheelSettings = function (force) {
     if (this.titleWidth === null && this.titleHeight !== null) { this.titleWidth = this.titleHeight; }
     if (wheelnavTitle().isImageTitle(this.title)) {
         // Image default value
-        if (this.titleWidth === null) { this.titleWidth = 32; }
-        if (this.titleHeight === null) { this.titleHeight = 32; }
+        if (this.titleWidth === null) { this.titleWidth = 92; }
+        if (this.titleHeight === null) { this.titleHeight = 117; }
     }
 
     if (this.wheelnav.titleHoverWidth !== null && this.titleHoverWidth === null) { this.titleHoverWidth = this.wheelnav.titleHoverWidth; }
@@ -1726,7 +1726,7 @@ wheelnav.prototype.styleWheel = function () {
 wheelnavItem.prototype.styleNavItem = function () {
     if (!this.wheelnav.cssMode) {
         this.slicePathAttr = { stroke: "#333", "stroke-width": 0, cursor: 'pointer', "fill-opacity": 1 };
-        this.sliceHoverAttr = { stroke: "#222", "stroke-width": 0, cursor: 'pointer', "fill-opacity": 1 };
+        this.sliceHoverAttr = { stroke: "#222", "stroke-width": 0, cursor: 'pointer', "fill-opacity": 0.77 };
         this.sliceSelectedAttr = { stroke: "#111", "stroke-width": 0, cursor: 'default', "fill-opacity": 1 };
 
         this.titleAttr = { font: this.titleFont, fill: "#333", stroke: "none", cursor: 'pointer' };

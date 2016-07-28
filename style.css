@@ -27,6 +27,7 @@ path {
 
 path:hover {
     fill: #dcdce6;
+    /*content: url('http://dummyimage.com/100x100/eb00eb/fff');*/
 }
 
 .inner-circle {
@@ -38,4 +39,46 @@ path:hover {
     border: 5px solid #161358;
     left: 260px;
     top: 260px;
+}
+
+/*Positioning Glasses*/
+
+image#wheelnav-wheelDiv-title-1 {
+    x: 640;
+    y: 700;
+}
+
+image#wheelnav-wheelDiv-title-2 {
+    x: 370;
+    y: 765;
+}
+
+image#wheelnav-wheelDiv-title-3 {
+    x: 155;
+    y: 622;
+}
+
+image#wheelnav-wheelDiv-title-4 {
+    x: 80;
+    y: 365;
+}
+
+image#wheelnav-wheelDiv-title-5 {
+    x: 240;
+    y: 125;
+}
+
+image#wheelnav-wheelDiv-title-6 {
+    x: 497;
+    y: 70;
+}
+
+image#wheelnav-wheelDiv-title-7 {
+    x: 725;
+    y: 210;
+}
+
+image#wheelnav-wheelDiv-title-0 {
+    x: 795;
+    y: 485;
 }
