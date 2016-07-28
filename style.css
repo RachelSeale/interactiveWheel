@@ -1,0 +1,41 @@
+body {
+    background-color: #E7E7E7;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#wheelDiv {
+    height: 1000px;
+    width: 960px;
+    position: absolute;
+}
+
+#wheelDiv>svg {
+    height: 100%;
+    width: 100%;
+}
+
+#wheelnav-wheelDiv-marker {
+    fill: #161358;
+    stroke: #161358;
+    stroke-width: 3px;
+}
+
+path {
+    stroke: #E7E7E7;
+    stroke-width: 1px;
+}
+
+path:hover {
+    fill: #dcdce6;
+}
+
+.inner-circle {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    background: white;
+    border-radius: 100%;
+    border: 5px solid #161358;
+    left: 260px;
+    top: 260px;
+}
