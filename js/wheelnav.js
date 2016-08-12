@@ -1112,7 +1112,7 @@ markerPath = function() {
         }
     }, this.TriangleMarkerCustomization = function() {
         var n = new markerPathCustomization;
-        return n.arcBaseRadiusPercent = .85, n.arcRadiusPercent = .74, n.startRadiusPercent = 1.8, n
+        return n.arcBaseRadiusPercent = .80, n.arcRadiusPercent = .70, n.startRadiusPercent = 1.8, n
     }, this.TriangleMarker = function(n, t, i) {
         i === null && (i = TriangleMarkerCustomization());
         n.setBaseValue(i.markerPercent * t, i);

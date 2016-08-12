@@ -42,13 +42,9 @@ body {
 }
 
 [class|=wheelnav-wheelDiv-slice-basic] { fill: white; stroke: #E7E7E7; }
-[class|=wheelnav-wheelDiv-slice-selected] { fill:  #dcdce6; stroke: white; }
+[class|=wheelnav-wheelDiv-slice-selected] { stroke: #E7E7E7; }
 [class|=wheelnav-wheelDiv-slice-hover] { fill: #ededed;  stroke: #E7E7E7; fill-opacity: 0.77; cursor: pointer; }
 
-/*[class|=wheelnav-wheelDiv-title-basic] { fill: #333; stroke: none; }
-[class|=wheelnav-wheelDiv-title-selected] { fill: #dcdce6;; stroke: none; }
-[class|=wheelnav-wheelDiv-title-hover] { fill: #222; stroke: none; cursor: pointer; }
-[class|=wheelnav-wheelDiv-title] > tspan { font-family: Impact, Charcoal, sans-serif; font-size: 24px; }*/
 
 .wheelnav-wheelDiv-marker { stroke: #444; stroke-width: 2; }
 
