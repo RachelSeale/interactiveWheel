@@ -1,47 +1,69 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Welcome by wheelnav.js">
-    <meta name="author" content="gabor.berkesi@softwaretailoring.net">
-    <link rel="shortcut icon" href="http://wheelnavjs.softwaretailoring.net/wheelnav_favicon.png">
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>GSAP / WheelNav</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  </head>
 
-    <title>wheelnav.js - Welcome</title>
+  <body>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <script type="text/javascript" src="raphael.min.js"></script>
-    <script type="text/javascript" src="wheelnav.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-
-    <script type="text/javascript">
-        window.onload = function () {
-            wheel = new wheelnav('wheelDiv');
-            wheel.clickModeRotate = false;
-        };
-    </script>
+  <style>
+    body{
+    	background-color: white;
+    }
+    #demo {
+    	width: 100%;
+    	height: 60px;
+    	background-color: white;
+    }
+</style>
 
 </head>
+
 <body>
-<!-- data-wheelnav-markerpath="PieLineMarker" -->
-    <div id="wheelDiv" data-wheelnav data-wheelnav-marker="true" data-wheelnav-slicepath="DonutSlice" data-wheelnav-colors="#FFFFFF">
-        <div data-wheelnav-navitemimg="images/Glass.png"></div>
-        <div data-wheelnav-navitemimg="images/Glass.png" onmouseup="alert('Place your logic here.');"></div>
-        <div data-wheelnav-navitemimg="images/Glass.png"><a href="#navitem"></a></div>
-        <div data-wheelnav-navitemimg="images/Glass.png"></div>
-        <div data-wheelnav-navitemimg="images/Glass.png"></div>
-        <div data-wheelnav-navitemimg="images/Glass.png"></div>
-        <div data-wheelnav-navitemimg="images/Glass.png"></div>
-        <div data-wheelnav-navitemimg="images/Glass.png"></div>
+<!--
+<input type="button" id="playBtn" value="play()">
+<input type="button" id="pauseBtn" value="pause()">
+<input type="button" id="restartBtn" value="restart()"> -->
+
+
+  <div id='wheelDiv' data-wheelnav
+   data-wheelnav-slicepath='DonutSlice'
+   data-wheelnav-marker
+   data-wheelnav-rotateoff
+   data-wheelnav-cssmode
+   data-wheelnav-init>
+    <div data-wheelnav-navitemimg='images/Glass.png'></div>
+    <div data-wheelnav-navitemimg='images/Glass.png'></div>
+    <div data-wheelnav-navitemimg='images/Glass.png'></div>
+    <div data-wheelnav-navitemimg='images/Glass.png'></div>
+    <div data-wheelnav-navitemimg='images/Glass.png'></div>
+    <div data-wheelnav-navitemimg='images/Glass.png'></div>
+    <div data-wheelnav-navitemimg='images/Glass.png'></div>
+    <div data-wheelnav-navitemimg='images/Glass.png'></div>
+  </div>
+  <div class="inner-circle">
+    <div class="inner-circle-title">
+      <span>Select your Drink</span>
     </div>
-    <div class="inner-circle">
-    </div>
-</body>
+  </div>
+
+
+
+
+  <div class="cocktail-container">
+    <div class="cocktail-title"></div>
+    <div class="instruction-one"></div>
+  </div>
+
+  <script src='js/jquery.min.js'></script>
+  <script src='js/raphael.min.js'></script>
+  <!-- <script src='http://therapymeetsnumbers.com/temp/raphael.icons.min.js'></script> -->
+  <script src='js/wheelnav.js'></script>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script> -->
+  <script src="js/index.js"></script>
+  <script src="js/text.js"></script>
+  </body>
 </html>
