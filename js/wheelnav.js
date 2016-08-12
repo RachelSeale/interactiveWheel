@@ -14,6 +14,7 @@ wheelnav.prototype.initWheel = function(n) {
     var u, r, t;
     for (this.styleWheel(), this.navItemCount === 0 ? (n !== undefined && n !== null && Array.isArray(n) || (n = ["title-0", "title-1", "title-2", "title-3"]), this.navItemCount = n.length) : n = null, i = 0; i < this.navItemCount; i++) r = "", r = this.navItemCountLabeled ? (i + this.navItemCountLabelOffset).toString() : n !== null ? n[i] : "", u = new wheelnavItem(this, r, i), this.navItems.push(u);
     for (t = 0, i = 0; i < this.navItems.length; i++) this.navItems[i].fillAttr = this.colors[t], t++, t === this.colors.length && (t = 0)
+
 };
 wheelnav.prototype.createWheel = function(n, t) {
     for (this.currentPercent === null && (this.currentPercent = t ? this.minPercent : this.maxPercent), this.navItems.length === 0 && this.initWheel(n), this.selectedNavItemIndex !== null && (this.navItems[this.selectedNavItemIndex].selected = !0), i = 0; i < this.navItemCount; i++) this.navItems[i].createNavItem();

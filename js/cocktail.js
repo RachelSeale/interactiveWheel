@@ -4,55 +4,59 @@ var cocktails = [];
 //Retrieves additional cocktail info from array and displays it
 showCocktail = function (cocktailId) {
     cocktail = cocktails[cocktailId]; //Retrieve cocktail by Id
-    title = "<h3>" + cocktail.title + "</h3>";
-    instructionOne = "<i>1. " + cocktail.instructionOne + "</i></br>";
-    // details += "<i>2. " + cocktail.instructionTwo + "</i>";
+    title = cocktail.title;
+    instructionOne = cocktail.instructionOne;
+    instructionTwo = cocktail.instructionTwo;
+    instructionThree = cocktail.instructionThree;
+
     $('.cocktail-title').html(title);
     $('.instruction-one').html(instructionOne);
+    $('.instruction-two').html(instructionTwo);
+    $('.instruction-three').html(instructionThree);
 };
 
 
 //Simulate JSON Request
 data = [{
     'title': 'Belclare',
-    'instructionOne': 'drink drink drink drink',
-    'instructionTwo': 'drink drink drink drink',
-    'instructionThree': 'drink drink drink drink'
+    'instructionOne': '1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
+    'instructionTwo': '2. drink drink drink drink',
+    'instructionThree': '3. drink drink drink drink'
 }, {
     'title': 'Cosmo',
-    'instructionOne': 'drink drink drink drink',
-    'instructionTwo': 'drink drink drink drink',
-    'instructionThree': 'drink drink drink drink'
+    'instructionOne': '1. drink drink drink drink',
+    'instructionTwo': '2. drink drink drink drink',
+    'instructionThree': '3. drink drink drink drink'
 }, {
     'title': 'Daquari',
-    'instructionOne': 'drink drink drink drink',
-    'instructionTwo': 'drink drink drink drink',
-    'instructionThree': 'drink drink drink drink'
+    'instructionOne': '1. drink drink drink drink',
+    'instructionTwo': '2. drink drink drink drink',
+    'instructionThree': '3. drink drink drink drink'
 }, {
     'title': 'Cosmopolitan',
-    'instructionOne': 'drink drink drink drink',
-    'instructionTwo': 'drink drink drink drink',
-    'instructionThree': 'drink drink drink drink'
+    'instructionOne': '1. drink drink drink drink',
+    'instructionTwo': '2. drink drink drink drink',
+    'instructionThree': '3. drink drink drink drink'
 }, {
     'title': 'Pina Colada',
-    'instructionOne': 'drink drink drink drink',
-    'instructionTwo': 'drink drink drink drink',
-    'instructionThree': 'drink drink drink drink'
+    'instructionOne': '1. drink drink drink drink',
+    'instructionTwo': '2. drink drink drink drink',
+    'instructionThree': '3. drink drink drink drink'
 }, {
     'title': 'Mojito',
-    'instructionOne': 'drink drink drink drink',
-    'instructionTwo': 'drink drink drink drink',
-    'instructionThree': 'drink drink drink drink'
+    'instructionOne': '1. drink drink drink drink',
+    'instructionTwo': '2. drink drink drink drink',
+    'instructionThree': '3. drink drink drink drink'
 }, {
     'title': 'Margarita',
-    'instructionOne': 'drink drink drink drink',
-    'instructionTwo': 'drink drink drink drink',
-    'instructionThree': 'drink drink drink drink'
+    'instructionOne': '1. drink drink drink drink',
+    'instructionTwo': '2. drink drink drink drink',
+    'instructionThree': '3. drink drink drink drink'
 }, {
     'title': 'Martini',
-    'instructionOne': 'drink drink drink drink',
-    'instructionTwo': 'drink drink drink drink',
-    'instructionThree': 'drink drink drink drink'
+    'instructionOne': '1. drink drink drink drink',
+    'instructionTwo': '2. drink drink drink drink',
+    'instructionThree': '3. drink drink drink drink'
 }];
 
 
@@ -70,3 +74,5 @@ for (i=0; i < data.length; i++) {
       cocktailTitles.push(data[i].title);
   }
 }
+
+showCocktail(0);

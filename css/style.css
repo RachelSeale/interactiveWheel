@@ -15,77 +15,86 @@ body {
     stroke-width: 3px;
 }
 
+.instruction-one {
+    position: absolute;
+    top: 250px;
+    width: 160px;
+    left: 30px;
+}
+
 .inner-circle {
     width: 540px;
     height: 540px;
     position: absolute;
-    background: white;
+    background: #ededed;
     border-radius: 100%;
     border: 5px solid #161358;
     left: 205px;
-    top: 218px;
-    background-image: url("../images/center-circle.png");
-    background-repeat: no-repeat;
-    background-size: 540px;
+    top: 205px;
     overflow: hidden;
 }
 
 .inner-circle-title {
-    left: 201px;
-    margin-top: 370px;
-    font-size: 36px;
+    left: 0px;
+    top: 420px;
+    position: absolute;
+    font-size: 30px;
+    padding: 10px 0;
     text-transform: uppercase;
     background-color: white;
     width: 540px;
     text-align: center;
     overflow: hidden;
+    font-weight: bold;
+    box-shadow: 0 4px 12px -2px #b9b7b7;
 }
 
-[class|=wheelnav-wheelDiv-slice-basic] { fill: white; stroke: #E7E7E7; }
-[class|=wheelnav-wheelDiv-slice-selected] { stroke: #E7E7E7; }
-[class|=wheelnav-wheelDiv-slice-hover] { fill: #ededed;  stroke: #E7E7E7; fill-opacity: 0.77; cursor: pointer; }
 
+
+[class|=wheelnav-wheelDiv-slice-basic] { fill: white; stroke: #E7E7E7; }
+[class|=wheelnav-wheelDiv-slice-selected] { stroke: #E7E7E7; fill: #dcdce6}
+[class|=wheelnav-wheelDiv-slice-hover] { fill: #ededed;  stroke: #E7E7E7; fill-opacity: 0.77; cursor: pointer; }
 
 .wheelnav-wheelDiv-marker { stroke: #444; stroke-width: 2; }
 
 /*Positioning Glasses*/
 
 image#wheelnav-wheelDiv-title-0 {
-    x: 823;
-    y: 492;
+    x: 633;
+    y: 79;
 }
 
 image#wheelnav-wheelDiv-title-1 {
-    x: 643;
-    y: 740;
+    x: 817;
+    y: 326;
 }
 
 image#wheelnav-wheelDiv-title-2 {
-    x: 340;
-    y: 795;
+    x: 758;
+    y: 619;
 }
 
 image#wheelnav-wheelDiv-title-3 {
-    x: 95;
-    y: 630;
+    x: 498;
+    y: 794;
 }
 
 image#wheelnav-wheelDiv-title-4 {
-    x: 26;
-    y: 330;
+    x: 217;
+    y: 735;
 }
 
 image#wheelnav-wheelDiv-title-5 {
-    x: 218;
-    y: 78;
+    x: 32;
+    y: 493;
 }
 
 image#wheelnav-wheelDiv-title-6 {
-    x: 510;
-    y: 26;
+    x: 92;
+    y: 200;
 }
 
 image#wheelnav-wheelDiv-title-7 {
-    x: 760;
-    y: 190;
+    x: 358;
+    y: 26;
 }
