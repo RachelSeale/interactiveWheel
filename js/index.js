@@ -12,6 +12,9 @@
 		var switchCocktail = function (cocktailId) {
 			$('#wheelnav-wheelDiv-title-0').attr('href','./images/Glass.png');
 			$('#wheelnav-wheelDiv-title-' + cocktailId).attr('href','./images/FullGlass.png');
+
+
+			$('svg').after('<text><tspan>hello</tspan></text>');
 			showCocktail(cocktailId);
 		};
 

@@ -5,58 +5,79 @@ var cocktails = [];
 showCocktail = function (cocktailId) {
     cocktail = cocktails[cocktailId]; //Retrieve cocktail by Id
     title = cocktail.title;
+    shortTitle = cocktail.shortTitle;
     instructionOne = cocktail.instructionOne;
     instructionTwo = cocktail.instructionTwo;
     instructionThree = cocktail.instructionThree;
+    imgPath = '<img src= "' + cocktail.imgPath + '" alt="">';
+
 
     $('.cocktail-title').html(title);
+    $('.short-title').html(shortTitle);
     $('.instruction-one').html(instructionOne);
     $('.instruction-two').html(instructionTwo);
     $('.instruction-three').html(instructionThree);
+    $('.cocktail-image').html(imgPath);
 };
 
 
 //Simulate JSON Request
 data = [{
     'title': 'Belclare',
-    'instructionOne': '1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
-    'instructionTwo': '2. drink drink drink drink',
-    'instructionThree': '3. drink drink drink drink'
+    'shortTitle': 'Bel',
+    'instructionOne': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
+    'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
+    'instructionThree': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
+    'imgPath': './images/TheFormula.png'
 }, {
     'title': 'Cosmo',
-    'instructionOne': '1. drink drink drink drink',
-    'instructionTwo': '2. drink drink drink drink',
-    'instructionThree': '3. drink drink drink drink'
+    'shortTitle': 'Cos',
+    'instructionOne': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
+    'instructionTwo': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
+    'instructionThree': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
+    'imgPath': './images/TheFormula.png'
 }, {
     'title': 'Daquari',
-    'instructionOne': '1. drink drink drink drink',
-    'instructionTwo': '2. drink drink drink drink',
-    'instructionThree': '3. drink drink drink drink'
+    'shortTitle': 'Daq',
+    'instructionOne': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
+    'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
+    'instructionThree': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
+    'imgPath': './images/TheFormula.png'
 }, {
-    'title': 'Cosmopolitan',
-    'instructionOne': '1. drink drink drink drink',
-    'instructionTwo': '2. drink drink drink drink',
-    'instructionThree': '3. drink drink drink drink'
+    'title': 'Mai Thai',
+    'shortTitle': 'Mai',
+    'instructionOne': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
+    'instructionTwo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
+    'instructionThree': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
+    'imgPath': './images/TheFormula.png'
 }, {
     'title': 'Pina Colada',
-    'instructionOne': '1. drink drink drink drink',
-    'instructionTwo': '2. drink drink drink drink',
-    'instructionThree': '3. drink drink drink drink'
+    'shortTitle': 'Pin',
+    'instructionOne': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
+    'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
+    'instructionThree': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
+    'imgPath': './images/TheFormula.png'
 }, {
     'title': 'Mojito',
-    'instructionOne': '1. drink drink drink drink',
-    'instructionTwo': '2. drink drink drink drink',
-    'instructionThree': '3. drink drink drink drink'
+    'shortTitle': 'Moj',
+    'instructionOne': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
+    'instructionTwo': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
+    'instructionThree': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
+    'imgPath': './images/TheFormula.png'
 }, {
-    'title': 'Margarita',
-    'instructionOne': '1. drink drink drink drink',
-    'instructionTwo': '2. drink drink drink drink',
-    'instructionThree': '3. drink drink drink drink'
+    'title': 'Manhattan',
+    'shortTitle': 'Man',
+    'instructionOne': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
+    'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
+    'instructionThree': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
+    'imgPath': './images/TheFormula.png'
 }, {
     'title': 'Martini',
-    'instructionOne': '1. drink drink drink drink',
-    'instructionTwo': '2. drink drink drink drink',
-    'instructionThree': '3. drink drink drink drink'
+    'shortTitle': 'Mar',
+    'instructionOne': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
+    'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
+    'instructionThree': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor. ',
+    'imgPath': './images/TheFormula.png'
 }];
 
 

@@ -5,15 +5,11 @@
     <title>Cocktail Wheel</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   </head>
 
 
 <body>
-<!--
-<input type="button" id="playBtn" value="play()">
-<input type="button" id="pauseBtn" value="pause()">
-<input type="button" id="restartBtn" value="restart()"> -->
-
 
   <div id='wheelDiv' data-wheelnav
    data-wheelnav-slicepath='DonutSlice'
@@ -32,14 +28,34 @@
     <div data-wheelnav-navitemimg='images/Glass.png'></div>
   </div>
   <div class="inner-circle">
-    <div class="inner-circle-title">
+    <div class="inner-circle-title title">
+      <span>The Formula</span>
+    </div>
+    <div class="instruction-container">
+      <span class="instruction-number-one">1.</span>
+      <p class="instruction instruction-one"></p>
+      <span class="instruction-number-two">2.</span>
+      <p class="instruction instruction-two"></p>
+      <span class="instruction-number-three">3.</span>
+      <p class="instruction instruction-three"></p>
+    </div>
+    <div class="cocktail-image">
+
+    </div>
+    <div class="inner-circle-sub-title title">
       <span class="cocktail-title"></span>
     </div>
-    <div class="cocktail-container">
-      <div class="instruction-one"></div>
-      <div class="instruction-two"></div>
-      <div class="instruction-three"></div>
-    </div>
+  </div>
+
+  <div>
+    <span class="short-title cocktail-zer hide" id="#wheelnav-wheelDiv-shortTitle-0"></span>
+    <span class="short-title cocktail-one hide" id="#wheelnav-wheelDiv-shortTitle-1"></span>
+    <span class="short-title cocktail-two hide" id="#wheelnav-wheelDiv-shortTitle-2"></span>
+    <span class="short-title cocktail-thr hide" id="#wheelnav-wheelDiv-shortTitle-3"></span>
+    <span class="short-title cocktail-fou hide" id="#wheelnav-wheelDiv-shortTitle-4"></span>
+    <span class="short-title cocktail-fiv hide" id="#wheelnav-wheelDiv-shortTitle-5"></span>
+    <span class="short-title cocktail-six hide" id="#wheelnav-wheelDiv-shortTitle-6"></span>
+    <span class="short-title cocktail-sev hide" id="#wheelnav-wheelDiv-shortTitle-7"></span>
   </div>
 
 
