@@ -13,7 +13,10 @@ showCocktail = function (cocktailId) {
 
 
     $('.cocktail-title').html(title);
-    $('.short-title').html(shortTitle);
+    $('.short-title').addClass('hide');
+    $('#wheelnav-wheelDiv-shortTitle-' + cocktailId)
+        .html(shortTitle)
+        .removeClass('hide');
     $('.instruction-one').html(instructionOne);
     $('.instruction-two').html(instructionTwo);
     $('.instruction-three').html(instructionThree);

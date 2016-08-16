@@ -110,14 +110,45 @@ body {
     text-transform: uppercase;
     position: absolute;
 }
+
 .cocktail-zer {
-    left: 518px;
-    top: 59px;
+    left: 555px;
+    top: 110px;
+}
+
+.cocktail-one {
+    left: 805px;
+    top: 285px;
+}
+
+.cocktail-two {
+    left: 760px;
+    top: 560px;
+}
+
+.cocktail-thr {
+    left: 607px;
+    top: 782px;
+}
+
+.cocktail-fou {
+    left: 325px;
+    top: 768px;
+}
+
+.cocktail-fiv {
+    left: 63px;
+    top: 629px;
+}
+
+.cocktail-six {
+    top: 345px;
+    left: 93px;
 }
 
 .cocktail-sev {
-    left: 210px;
-    top: 105px;
+    left: 260px;
+    top: 70px;
 }
 
 [class|=wheelnav-wheelDiv-slice-basic] { fill: white; stroke: #E7E7E7; }
