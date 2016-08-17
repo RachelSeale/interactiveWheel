@@ -6,6 +6,7 @@ showCocktail = function (cocktailId) {
     cocktail = cocktails[cocktailId]; //Retrieve cocktail by Id
     title = cocktail.title;
     shortTitle = cocktail.shortTitle;
+    buyNowLink = cocktail.buyNowLink;
     instructionOne = cocktail.instructionOne;
     instructionTwo = cocktail.instructionTwo;
     instructionThree = cocktail.instructionThree;
@@ -14,8 +15,13 @@ showCocktail = function (cocktailId) {
 
     $('.cocktail-title').html(title);
     $('.short-title').addClass('hide');
+    $('.buynow-link').addClass('hide');
     $('#wheelnav-wheelDiv-shortTitle-' + cocktailId)
         .html(shortTitle)
+        .removeClass('hide');
+
+    $('#wheelnav-wheelDiv-buyNowLink-' + cocktailId)
+        .html(buyNowLink)
         .removeClass('hide');
     $('.instruction-one').html(instructionOne);
     $('.instruction-two').html(instructionTwo);
@@ -28,6 +34,7 @@ showCocktail = function (cocktailId) {
 data = [{
     'title': 'Belclare',
     'shortTitle': 'Bel',
+    'buyNowLink': 'Buy Now',
     'instructionOne': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
     'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
     'instructionThree': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
@@ -35,6 +42,7 @@ data = [{
 }, {
     'title': 'Cosmo',
     'shortTitle': 'Cos',
+    'buyNowLink': 'Buy Later',
     'instructionOne': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
     'instructionTwo': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
     'instructionThree': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
@@ -42,6 +50,7 @@ data = [{
 }, {
     'title': 'Daquari',
     'shortTitle': 'Daq',
+    'buyNowLink': 'Buy Now',
     'instructionOne': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
     'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
     'instructionThree': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
@@ -49,6 +58,7 @@ data = [{
 }, {
     'title': 'Mai Thai',
     'shortTitle': 'Mai',
+    'buyNowLink': 'Buy Now',
     'instructionOne': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
     'instructionTwo': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
     'instructionThree': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
@@ -56,6 +66,7 @@ data = [{
 }, {
     'title': 'Pina Colada',
     'shortTitle': 'Pin',
+    'buyNowLink': 'Buy Now',
     'instructionOne': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
     'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
     'instructionThree': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
@@ -63,6 +74,7 @@ data = [{
 }, {
     'title': 'Mojito',
     'shortTitle': 'Moj',
+    'buyNowLink': 'Buy Now',
     'instructionOne': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
     'instructionTwo': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
     'instructionThree': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
@@ -70,6 +82,7 @@ data = [{
 }, {
     'title': 'Manhattan',
     'shortTitle': 'Man',
+    'buyNowLink': 'Buy Now',
     'instructionOne': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor.',
     'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
     'instructionThree': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
@@ -77,6 +90,7 @@ data = [{
 }, {
     'title': 'Martini',
     'shortTitle': 'Mar',
+    'buyNowLink': 'Buy Now',
     'instructionOne': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida volutpat ante ac porttitor.',
     'instructionTwo': 'Praesent pretium ex purus, vel convallis tortor pretium quis. Pellentesque eleifend tristique mauris.',
     'instructionThree': 'Nam at elementum mauris. Pellentesque eleifend tristique mauris. Duis rhoncus cursus auctor. ',
