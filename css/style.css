@@ -19,6 +19,12 @@ body {
     stroke-width: 3px;
 }
 
+[class|=wheelnav-wheelDiv-slice-basic] { fill: white; stroke: #E7E7E7; }
+[class|=wheelnav-wheelDiv-slice-selected] { stroke: #E7E7E7; fill: #dcdce6}
+[class|=wheelnav-wheelDiv-slice-hover] { fill: #ededed;  stroke: #E7E7E7; fill-opacity: 0.77; cursor: pointer; }
+
+.wheelnav-wheelDiv-marker { stroke: #444; stroke-width: 2; }
+
 .instruction {
     font-family: 'Lora', serif;
     font-size: 14px;
@@ -26,20 +32,11 @@ body {
     width: 140px;
 }
 
-.instruction-one {
-    top: 260px;
-    left: 40px;
-}
+.instruction-one { top: 260px; left: 40px; }
 
-.instruction-two {
-    left: 220px;
-    top: 103px;
-}
+.instruction-two { left: 220px; top: 103px; }
 
-.instruction-three {
-    top: 260px;
-    left: 370px;
-}
+.instruction-three { top: 260px; left: 370px; }
 
 .instruction-number-one,
 .instruction-number-two,
@@ -47,20 +44,12 @@ body {
     position: absolute;
     font-size: 30px;
 }
-.instruction-number-one {
-    top: 230px;
-    left: 40px;
-}
 
-.instruction-number-two {
-    top: 115px;
-    left: 185px;
-}
+.instruction-number-one { top: 230px; left: 40px; }
 
-.instruction-number-three {
-    top: 230px;
-    left: 370px;
-}
+.instruction-number-two { top: 115px; left: 185px; }
+
+.instruction-number-three { top: 230px; left: 370px; }
 
 .inner-circle {
     width: 540px;
@@ -82,7 +71,6 @@ body {
     text-align: center;
     font-weight: bold;
     position: absolute;
-
     text-transform: uppercase;
 }
 
@@ -110,52 +98,98 @@ body {
     text-transform: uppercase;
     position: absolute;
 }
-
-.cocktail-zer {
-    left: 555px;
-    top: 110px;
+.buynow-link {
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
 }
 
-.cocktail-one {
-    left: 805px;
-    top: 285px;
+a.buynow-link {
+    text-decoration: none;
 }
 
-.cocktail-two {
-    left: 760px;
-    top: 560px;
+/*TEXT ONTOP OF COCKTAIL SLICE*/
+
+.cocktail-zer.short-title {
+    left: 515px;
+    top: 80px;
 }
 
-.cocktail-thr {
-    left: 607px;
+.cocktail-zer.buynow-link {
+    left: 515px;
+    top: 130px;
+}
+
+.cocktail-one.short-title {
+    left: 755px;
+    top: 240px;
+}
+
+.cocktail-one.buynow-link {
+    left: 755px;
+    top: 290px;
+}
+
+.cocktail-two.short-title {
+    left: 773px;
+    top: 526px;
+}
+
+.cocktail-two.buynow-link {
+    left: 773px;
+    top: 576px;
+}
+
+.cocktail-thr.short-title {
+    left: 615px;
     top: 782px;
 }
 
-.cocktail-fou {
-    left: 325px;
-    top: 768px;
+.cocktail-thr.buynow-link {
+    left: 615px;
+    top: 832px;
 }
 
-.cocktail-fiv {
-    left: 63px;
+.cocktail-fou.short-title {
+    left: 340px;
+    top: 795px;
+}
+
+.cocktail-fou.buynow-link {
+    left: 340px;
+    top: 845px;
+}
+
+.cocktail-fiv.short-title {
+    left: 95px;
     top: 629px;
 }
 
-.cocktail-six {
+.cocktail-fiv.buynow-link {
+    left: 95px;
+    top: 679px;
+}
+
+.cocktail-six.short-title {
+    left: 60px;
     top: 345px;
-    left: 93px;
 }
 
-.cocktail-sev {
-    left: 260px;
-    top: 70px;
+.cocktail-six.buynow-link {
+    left: 60px;
+    top: 395px;
 }
 
-[class|=wheelnav-wheelDiv-slice-basic] { fill: white; stroke: #E7E7E7; }
-[class|=wheelnav-wheelDiv-slice-selected] { stroke: #E7E7E7; fill: #dcdce6}
-[class|=wheelnav-wheelDiv-slice-hover] { fill: #ededed;  stroke: #E7E7E7; fill-opacity: 0.77; cursor: pointer; }
+.cocktail-sev.short-title {
+    left: 232px;
+    top: 98px;
+}
 
-.wheelnav-wheelDiv-marker { stroke: #444; stroke-width: 2; }
+.cocktail-sev.buynow-link {
+    left: 232px;
+    top: 148px;
+}
+
 
 /*Positioning Glasses*/
 
